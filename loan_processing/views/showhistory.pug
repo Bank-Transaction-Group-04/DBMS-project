@@ -1,0 +1,21 @@
+html
+   body
+      body(style='background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm373batch9-banner-03-319-kob04xzp.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=05779e02b628e4b077f1fe2bf9dd6eb2);background-size: 100% 100%;')
+      h1(style='font-size: 50px; color: red; text-align: center;') Transaction History of #{bnchname} branch
+      
+      table
+          thead
+              tr
+                  th W_ID
+                  th AMOUNT
+                  th DATE_TIME
+                  th ACCOUNT_NUMBER
+                  th DESCRIPT
+          tbody
+              for row in rows
+                  tr
+                      td= row.W_ID
+                      td= row.AMOUNT
+                      td= row.DATE_TIME
+                      td= row.ACCOUNT_NUMBER
+                      td= row.DESCRIPT

@@ -1,0 +1,25 @@
+html
+   body
+      body(style='background-image: url(https://cdnblog.etmoney.com/wp-content/uploads/2020/08/Benefits-Of-Fixed-Deposit.jpg);background-size: 100% 100%;')
+         
+         h1(style='font-size: 50px; color: red; text-align: center;') Personal Loans
+
+           table
+            thead
+               tr
+                     th Customer Name
+                     
+            tbody
+                for i in name
+                     tr
+                        td= i.name
+                       
+         form(role='form' method='POST' action='/approved-personal')
+            div.form-group
+               label(for='apply_id') Application ID : 
+               input#appy_id.form-control(type='text',name ='apply_id')
+            button.btn.btn-primary(type="submit") Submit
+         
+         form(role='form' method='POST' action='/reject-personal')
+            
+            button.btn.btn-primary(type="submit") Reject
