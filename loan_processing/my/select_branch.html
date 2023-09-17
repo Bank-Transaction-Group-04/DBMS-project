@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+
+</head>
+<style>
+body {
+  background-image: url('https://media.istockphoto.com/id/1304484797/photo/person-holds-a-smartphone-with-mobile-banking-icons-projection.jpg?s=612x612&w=0&k=20&c=eYpphDeQI9uW4DnmQhAx7alQEIrQ7p6JlWfGTb80v-s=');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<BODY >
+	
+    <h1 style="text-align:center; font-size: 30px; color: rgb(102, 0, 255);"> Select Branch </h1>
+    <form action='/transaction_history_process' method='post'>
+        <table cellpadding="10" cellspacing="2" align="center">
+            
+            
+            <th class="row1"> </th>
+            <tr>
+                <td class="col1"><b>Branch name</b></td>
+                
+                <td class="col2">
+                <select name="Branch_name" id="Branch_name">
+                    <option value="COLOMBO">COLOMBO</option>
+                    <option value="KANDY">KANDY</option>
+                    <option value="JAFFNA">JAFFNA</option>
+                    <option value="TRINCOMALLE">TRINCOMALLE</option>
+                    <option value="MATARA">MATARA</option>
+                    <option value="BADULLA">BADULLA</option>
+                    <option value="GALLE">GALLE</option>
+                    <option value="GAMPAHA">GAMPAHA</option>
+                    <option value="ANURADHAPURA">ANURADHAPURA</option>
+                </select>
+            </td>
+            </tr>
+            
+        
+            <tr colspan="2" align="center">
+                <td>
+                    <button type="submit" class="submit1"  onclick="submitProjectDetails()">Conform the selection</button>
+                </td>
+                <td>
+                    <button type="reset" class="reset1" onclick="resetProjectDetails()">Clear</button>
+                </td>
+            </tr>
+        
+            
+        </table>
+   </form>
+        <h3 style="text-align:center"> Thank you for being with us</h3
+</BODY>
+</html>
